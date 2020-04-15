@@ -13,7 +13,7 @@ bot.on('ready', () => {
 bot.on('message', message => {
   //@ a user
     if(user.isUser(message.content.toLowerCase())){
-      message.channel.send(user.getID(message.content))
+      message.channel.send(user.getID(message.content.toLowerCase()))
     }
 });
 
