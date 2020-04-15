@@ -1,8 +1,5 @@
 //requires
 const { Client, MessageEmbed } = require('discord.js');
-//var auth = require('./auth.json');
-var getInsult = require('insults');
-var quote = require('inspirational-quotes')
 var user = require("./controllers/user.js")
 
 //Vars
