@@ -19,8 +19,7 @@ bot.on('message', message => {
 
 
 // bot.login(auth.token)
-//bot.login(process.env.BOT_TOKEN)
-console.log(process.env.BOT_TOKEN)
+bot.login(process.env.BOT_TOKEN)
 
 
 
