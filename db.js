@@ -1,13 +1,13 @@
 var obj = { 
-  // User {
-  //   id: '57876631305326592',
-  //   bot: false,
-  //   username: 'Toukans',
-  //   discriminator: '2000',
-  //   avatar: '6545f5e9029c60647fc81167034023c0',
-  //   lastMessageID: null,
-  //   lastMessageChannelID: null
-  // },
+  victor : {
+    id: '57876631305326592',
+    bot: false,
+    username: 'Toukans',
+    discriminator: '2000',
+    avatar: '6545f5e9029c60647fc81167034023c0',
+    lastMessageID: null,
+    lastMessageChannelID: null
+  },
   // User {
   //   id: '119274745844727808',
   //   bot: false,
