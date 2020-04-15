@@ -1,6 +1,6 @@
 var obj = { 
   victor : {
-    id: '57876631305326592',
+    id: '<@57876631305326592>',
     bot: false,
     username: 'Toukans',
     discriminator: '2000',
