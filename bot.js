@@ -1,21 +1,40 @@
 //requires
-const { Client, MessageEmbed } = require('discord.js');
-var user = require("./controllers/user.js")
+const { Client, MessageEmbed } = require('discord.js')
+const user = require('./controllers/user.js')
+// const auth = require('./auth.json')
 
 //Vars
-var bot = new Client()
+const bot = new Client()
+
 
 bot.on('ready', () => {
-  console.log("Connected");
+  console.log('Connected')
 })
 	
 
 bot.on('message', message => {
-  //@ a user
-    if(user.isUser(message.content.toLowerCase())){
-      message.channel.send(user.getID(message.content.toLowerCase()))
+  //console.log('bot : ' + message.content.toLowerCase())
+  //check if a user is type
+    if(user.isUser(message)){
+      if(!user.isMessage(message)){
+        const msgEmbed = new MessageEmbed()
+          .setTitle('')
+          .setColor('RANDOM')
+          .setDescription(user.getName(message))
+
+        message.channel.send(msgEmbed)
+      }
+      else if(user.isMessage(message)){
+        const msgEmbed = new MessageEmbed()
+          .setTitle(user.getMessage(message))
+          .setColor('RANDOM')
+          .setDescription(user.getName(message))
+
+        message.channel.send(msgEmbed)
+      }
     }
-});
+
+})
 
 
 // bot.login(auth.token)
