@@ -17,20 +17,21 @@ bot.on('message', message => {
   //check if a user is type
     if(user.isUser(message)){
       if(!user.isMessage(message)){
-        const msgEmbed = new MessageEmbed()
-          .setTitle('')
-          .setColor('RANDOM')
-          .setDescription(user.getName(message))
-
-        message.channel.send(msgEmbed)
+        // const msgEmbed = new MessageEmbed()
+        //   .setTitle('')
+        //   .setColor('RANDOM')
+        //   .setDescription(user.getName(message))
+        message.channel.send(user.getName(message))
+        // message.channel.send(msgEmbed)
       }
       else if(user.isMessage(message)){
-        const msgEmbed = new MessageEmbed()
-          .setTitle(user.getMessage(message))
-          .setColor('RANDOM')
-          .setDescription(user.getName(message))
+        // const msgEmbed = new MessageEmbed()
+        //   .setTitle(user.getMessage(message))
+        //   .setColor('RANDOM')
+        //   .setDescription(user.getName(message))
 
-        message.channel.send(msgEmbed)
+        message.channel.send(user.getName(message) + ' ' + user.getMessage(message))
+        // message.channel.send(msgEmbed)
       }
     }
 
