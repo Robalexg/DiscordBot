@@ -163,6 +163,9 @@ var obj = {
     avatar: '025117a2a5c27a9d6b612ec1af0a1d7d',
     lastMessageID: null,
     lastMessageChannelID: null
+  },
+  everyone : {
+    id: '@everyone'
   }
 }
 
