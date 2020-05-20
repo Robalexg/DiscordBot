@@ -165,7 +165,7 @@ var obj = {
     lastMessageChannelID: null
   },
   everyone : {
-    id: '@everyone'
+    id: '<@630889956700717067>'
   }
 }
 
